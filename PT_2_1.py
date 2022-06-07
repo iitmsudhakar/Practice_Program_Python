@@ -16,6 +16,7 @@ def _emerald_(n):
     return emerald_List
 
 # input roll number from user
+
 number = int(input())
 
 # print roll number based on grouping 
