@@ -1,5 +1,6 @@
 def type_of_sequence(L):
     sum = 0
+    mysterious = []
     for elem in L:
         if mysterious(elem):
             sum += 1

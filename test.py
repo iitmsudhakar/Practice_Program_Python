@@ -31,7 +31,7 @@ for j in range(dim2):
     for k in range(dim1):
         added_mat[j].append(0)
 
-for i in range(dim2):2
+for i in range(dim2):
     for j in range(dim1):
         result[i][j] = X[j][i]
 '''
