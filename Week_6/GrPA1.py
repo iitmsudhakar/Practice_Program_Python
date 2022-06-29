@@ -11,7 +11,7 @@ def get_marks(scores_dataset, subject, gender):
 def get_toppers(scores_dataset, subject, gender): 
     L = get_marks(scores_dataset, subject, gender) 
     toppers = [ ] 
-    maxmarks = 0 
+    maxmarks = 0
     for i in range(len(L)): 
         if L[i][1] >maxmarks: 
             maxmarks = L[i][1] 
