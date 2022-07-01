@@ -33,7 +33,7 @@ print(k)
 # File Handling
 f = open(source_file,'r')
 # Create the Encrypted file
-g = open("Encrypted_File.txt",'w')
+g = open("Decrypted_File.txt",'w')
 
 # Call the dictionary creation functions
 d = decrypt_char(k)
