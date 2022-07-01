@@ -1,0 +1,1 @@
+abcdefghijklmnopqrstuvwxyz 1234567890!@#$%^&*()_+=-|\}]{["':;?/>.<,]} Special characters can be used in online forms for malicious reasons if they're not escaped or handled correctly. Some developers may not support special characters in their online forms.
