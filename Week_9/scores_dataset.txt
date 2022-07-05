@@ -1,0 +1,1 @@
+{'SeqNo': 0, 'Name': 'Devika', 'Gender': 'F', 'City': 'Bengaluru', 'Mathematics': 85, 'Physics': 100, 'Chemistry': 79}
