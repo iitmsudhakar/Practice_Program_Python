@@ -3,10 +3,10 @@ def num_to_words(L):
                8: 'eight', 9: 'nine'}
     f = open('words.csv', 'w')
     line = ''
-    count1 = 0
+    #count1 = 0
     count2 = 0
     for i in range(len(L)):
-        count1 += 1
+        #count1 += 1
         for j in range(len(L[0])):
             count2 += 1
             value = L[i][j]
@@ -17,10 +17,10 @@ def num_to_words(L):
             else:
                 if count2 == len(L[0]):
                     line += number + '\n'
-                    count1 = 0
+                    #count1 = 0
                     count2 = 0
     f.write(line)
     f.close()
 
 
-num_to_words([[9, 7, 2], [1, 0, 5], [5, 2, 6]])
+num_to_words([[9, 7, 2], [1, 6, 5], [5, 2, 6]])
