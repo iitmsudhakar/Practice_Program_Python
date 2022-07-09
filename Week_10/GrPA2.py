@@ -57,8 +57,6 @@ class StringManipulation:
         return L
 
 
+L = ["apple", "mango", "peaches", "apple"]
 
-
-
-
-
+print(L.count("apple"))
