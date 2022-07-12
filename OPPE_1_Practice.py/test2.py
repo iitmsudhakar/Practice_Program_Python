@@ -1,34 +1,26 @@
-L = [1,1,2,3,4,5,6,6,2,3,3,2,9,5,5,3,6,1,3,7,9,4]
-'''
-S = set(L)
-D ={}
-for i in S:
-    D[i] = 0
+from itertools import groupby
+
+L = [11, 3, 11, 3, 7, 7, 6, 5, 5, 7, 6, 6, 2, 1]
+
+L.sort()
+
+print([list(j) for i, j in groupby(L)])
 NL = []
+SNL = []
+while len(L) > 0:
+    for i in range(len(L)):
+        if L[i] != L[i+1]:
+            NL.append(L[i])
+            SNL.append(NL)
+            L.remove(L[i])
+            print(SNL)
+        if L[i] == L[i+1]:
+            NL.append(L[i])
+            NL.append(L[i+1])
+            SNL.remove(L[i])
+            SNL.remove((L[i+1]))
+            L.remove(L[i])
+            L.remove(L[i+1])
 
-for i in L:
-    D[i] += 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
-
-
-G = (D.keys())
-
-print(G)
-print(D)
-O = []
-for i in D:
-    for j in range(D[i]):
-        U = D.keys()
-
-print(U)
-
-'''
-NL = [] 
-SL = []   
-for i in range(len(L)):
-    for j in range(1,len(L)):
-        if L[i] == L[j]:
-            SL.append(L[i])
-        NL.append(SL)
-
-print(NL)
+print(SNL)
 

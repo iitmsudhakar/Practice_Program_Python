@@ -1,13 +1,17 @@
-N = int(input())
-L = input().split(',')
+a = int(input())
+b = input().split(',')
+total = 0
+count = 0
+for i in range(len(b)):
+    for i in range(len(b) - 1):
+        if int(b[i]) < int(b[i + 1]):
+            b[i], b[i + 1] = b[i + 1], b[i]
 
-
-def check(N,L):
-    count = 0
-    for i in range(len(L)):
-        for j in range(len(L)):
-            if int(L[i])+int(L[j]) >= N:
-                count += 1
-    return count
-
-print(check(N,L))
+for i in range(len(b)):
+    total = total + int(b[i])
+    count += 1
+    if total >= a:
+        print(count)
+        break
+else:
+    print('None')
