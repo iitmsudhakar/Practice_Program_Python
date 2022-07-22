@@ -1,52 +1,41 @@
-# Parent class with common attributes
-class Player:
-    def __init__(self, player_num, name):
-        self.player_num = player_num
+class Student:
+    count = 0
+
+    def __init__(self, name, roll, maths, physics, chemistry):
+        Student.count += 1
+        self.roll = roll
         self.name = name
-
-    # Common attributes display method
-    def display(self):
-        print(self.player_num, self.name)
-
-
-# Child class 1 representing common attributes along with the unique attribute of this child class (goal)
-class Fplayer(Player):
-    def __init__(self, player_num, name, goals):
-        # Referring to the Parent class
-        super().__init__(player_num, name)
-        self.goals = goals
-
-    # Child 1 attributes display method
-    def display(self):
-        # Referring to the Parent class
-        super().display()
-        print(self.goals)
+        self.maths = maths
+        self.physics = physics
+        self.chemistry = chemistry
 
 
-# Child class 2 representing common attributes along with the unique attribute of this child class (runs)
-class Cplayer(Player):
-    def __init__(self, player_num, name, runs):
-        # Referring to the Parent class
-        super().__init__(player_num, name)
-        self.runs = runs
+class Group:
+    def __init__(self):
+        self.members = []
 
-    # Child 1 attributes display method
-    def display(self):
-        # Referring to the Parent class
-        super().display()
-        print(self.runs)
+    def add(self, student):
+        self.members.append(student)
+
+    def print_members(self):
+        for student in self.members:
+            print(student.name)
 
 
-'''
-    def goals(self):
-        if self.goals > 20:
-            print("Star Player")
-        else:
-            print("Normal Player")
-'''
+def remove(self, roll):
+    if roll in self.members:
+        self.members.remove(roll)
+    else:
+        print('Student not found')
 
-P1 = Fplayer(27, 'Messi', 45)
-P2 = Cplayer(7, 'Dhoni', 1012)
-P1.display()
-P2.display()
-# P1.goals()
+
+study_group = Group()
+study_group.add(Student('Lathika', 1, 100, 90, 80))
+study_group.add(Student('Keerthana', 2, 80, 70, 60))
+study_group.add(Student('Sourabh', 3, 100, 50, 60))
+
+
+student = Student('Anish')
+
+
+
