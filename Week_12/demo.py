@@ -18,6 +18,8 @@ G = [{
 
 ]
 
+
+
 L = []
 
 for x in G:
@@ -29,4 +31,6 @@ for x in G:
     D['Cost'] = val
     L.append(D)
 print(L)
+
+
 
